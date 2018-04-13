@@ -4,16 +4,22 @@ nodejs实现的apk在fir.im一键上传
 [api文档参考](https://fir.im/docs/publish)
 
 ## 操作
- - 1.将uploadApk2fir.js文件移动到AS的Android项目中
- - 2.改动api_token
-
- 		..."api_token":"***"...
- - 3.改动apk文件路径
-
- 		...'/app/build/outputs/apk/debug/app-debug.apk'...
+ - 1.配置
+	
+		let tokens = {
+			keyboard3: '自己的token'
+		}
+		let apkType = {
+			debug: 'debug/app-debug.apk',
+			preview: 'preview/app-preview.apk',
+			release: 'release/app-release.apk'
+		}
+		let activeToken = tokens.keyboard3;
+		let activeApkType = apkType.debug;
  - 4.执行
- 	
- 		node uploadApk2fir.js
+		
+		cd 项目根目录下
+ 		node 存放的目录/uploadApk2fir.js
 
 ## 注意
 
