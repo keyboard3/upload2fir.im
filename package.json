@@ -1,0 +1,23 @@
+{
+  "name": "upload2fir.im",
+  "version": "1.0.0",
+  "description": "nodejs实现的apk在fir.im一键上传",
+  "main": "uploadApk2fir.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keyboard3/upload2fir.im.git"
+  },
+  "author": "keyboard3 <keboard3@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keyboard3/upload2fir.im/issues"
+  },
+  "homepage": "https://github.com/keyboard3/upload2fir.im#readme",
+  "dependencies": {
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  }
+}
